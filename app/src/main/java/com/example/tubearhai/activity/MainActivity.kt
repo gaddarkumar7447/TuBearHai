@@ -37,16 +37,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        //val apiInstance = ApiIntence.getApiInstance(this).create(ApiServices::class.java)
-        /*MainScope().launch {
-            *//*apiInstance.getBearData(1, 20).body()?.let { BearData() }?.map {
-                Log.d("DataShoe", it.image_url +" ${it.id}")
-            }*//*
-            val a: List<Int>? = apiInstance.getBearData(1, 20).body()?.map {
-                Log.d("DataShoe", it.image_url +" ${it.name}")
-            }
-        }*/
-
         bearDataItem = mutableListOf()
 
         adapter = BearAdapter()
@@ -75,7 +65,6 @@ class MainActivity : AppCompatActivity() {
                     binding.recyclerViewVeil.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                         this.setMargins(0,0,0,100)
                     }
-                    Log.d("DataCome", "${this}")
                 }
             }else{
                 if (isFirstTimeRefreshing){

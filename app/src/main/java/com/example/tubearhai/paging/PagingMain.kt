@@ -1,6 +1,6 @@
 package com.example.tubearhai.paging
 
-import android.util.Log
+
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.tubearhai.api.ApiServices
@@ -14,7 +14,7 @@ override fun getRefreshKey(state: PagingState<Int, BearDataItem>): Int? {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, BearDataItem> {
         return try {
             val currentPage = params.key ?: 1
-            Log.d("CurrentPage", currentPage.toString())
+            //Log.d("CurrentPage", currentPage.toString())
             val response = apiServices.getBearData(currentPage, 10)
             val responseData1: List<BearDataItem>? = response.body()?.map { it1 -> it1}
 

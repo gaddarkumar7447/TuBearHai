@@ -13,8 +13,6 @@ data class BearDataItem(
     val ibu: Double,
     val id: Int,
     val image_url: String,
-    val ingredients: Ingredients,
-    val method: Method,
     val name: String,
     val ph: Double,
     val srm: Double,
