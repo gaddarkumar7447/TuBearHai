@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activity.MainActivity">
+
+        <com.skydoves.androidveil.VeilRecyclerFrameView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/recyclerViewVeil"
+            app:veilFrame_baseAlpha="0.2"
+            app:veilFrame_baseColor="@color/teal_200"
+            app:veilFrame_highlightAlpha="0.5"
+            app:veilFrame_highlightColor="@color/teal_200"
+            app:veilFrame_isItemWrapContentHeight="true"
+            app:veilFrame_isItemWrapContentWidth="false"
+            app:veilFrame_layout="@layout/bearlayout"
+            app:veilFrame_radius="5dp"
+            app:veilFrame_veiled="true"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="15dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+</layout>

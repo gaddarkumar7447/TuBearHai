@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="120dp"
+                        android:cropToPadding="true"
+                        android:padding="5dp"
+                        android:id="@+id/imageBear"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"
+                        android:layout_height="95dp"/>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:id="@+id/cross"
+                        android:layout_marginStart="100dp"
+                        android:src="@drawable/cross_svgrepo_com"
+                        android:layout_height="35dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/black"
+                    android:id="@+id/fullName"
+                    android:padding="8dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="TagLine"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/black"
+                    android:id="@+id/tagLineF"
+                    android:padding="8dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Description"
+                    android:padding="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/description"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="first_brewed"
+                    android:padding="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/first_brewed"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="valume"
+                    android:id="@+id/valume"
+                    android:padding="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="brewers_tips"
+                    android:id="@+id/brewers_tips"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</layout>
